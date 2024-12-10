@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me!!</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1E201E;
+            font-family: Arial, sans-serif;
+            color: #FFF;
+        }
+
+        /* Main Navigation Bar */
+        .mainbar {
+            background-color: #1B1833;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .mainbar h1 {
+            font-size: 32px;
+            color: #FFF;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .mainbuttons {
+            background-color: #8B5DFF;
+            color: #FFF;
+            padding: 10px 20px;
+            border: 1px solid #FFF7D1;
+            border-radius: 24px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .mainbuttons:hover {
+            background-color: #563A9C;
+            transform: scale(1.05);
+        }
+
+        .mainbuttons.active {
+            background-color: #563A9C;
+        }
+
+        /* Main Content Section */
+        .content {
+            background-color: #835AEC;
+            width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .general {
+            background-color: #ffffff7e;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1rem;
+            color: #080808;
+            line-height: 1.5;
+        }
+
+        /* Animations for Text */
+        p, ul {
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Skills List */
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Next Button */
+        #next {
+            display: block;
+            width: 100px;
+            height: 50px;
+            margin: 20px auto;
+            background-color: #1E201E;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #next:hover {
+            background-color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .mainbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            .mainbar h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .nav-buttons {
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            .mainbuttons {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            .content {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            #next {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .mainbar {
+                align-items: center;
+                text-align: center;
+            }
+
+            .mainbar h1 {
+                font-size: 20px;
+            }
+
+            .nav-buttons {
+                justify-content: center;
+            }
+
+            .mainbuttons {
+                font-size: 10px;
+                padding: 6px 10px;
+            }
+
+            #next {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="mainbar">
+        <h1>About Me!!</h1>
+        <div class="nav-buttons">
+            <button class="mainbuttons" onclick="location.href='index.html';">Home</button>
+            <button class="mainbuttons active">About ME</button>
+            <button class="mainbuttons" onclick="location.href='projects.html';">Projects</button>
+            <button class="mainbuttons" onclick="location.href='contact.html';">Contact</button>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- About Me Introduction -->
+        <div class="general">
+            <p>Hello! I'm Alis Patel, currently pursuing a B.Tech in Computer Science and Engineering at Nirma University🎓. I have a deep interest in technology and innovation, with a focus on creating efficient and impactful solutions. My journey in the field of computer science is driven by curiosity and a constant desire to learn and grow.</p>
+            <p>I am fascinated by the potential of emerging technologies like artificial intelligence, machine learning, and cloud computing. My academic pursuits and personal projects reflect my commitment to leveraging technology for real-world problem-solving.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="general">
+            <ul>
+                <li>Programming Languages: Proficient in HTML, CSS, JavaScript & C.</li>
+                <li>Web Development: Experienced in creating responsive websites using HTML, CSS, React, and Node.js.</li>
+                <li>Database Management: Skilled in SQL, MongoDB, and Firebase.</li>
+                <li>Software Development: Familiar with software lifecycle practices like Agile and version control using Git.</li>
+                <li>Machine Learning & AI: Knowledgeable in TensorFlow and Scikit-learn, with hands-on experience in building predictive models.</li>
+                <li>Cloud Computing: Experienced in deploying applications on AWS and Azure.</li>
+                <li>Cybersecurity: Basic understanding of security protocols and ethical hacking principles.</li>
+            </ul>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next" onclick="location.href='about1.html';">Next</button>
+    </div>
+</body>
+</html>
