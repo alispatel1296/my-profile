@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1E201E;
+            font-family: Arial, sans-serif;
+            color: #FFF7D1;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .mainbar {
+            background-color: #1B1833;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .mainbar h1 {
+            font-size: 1.8rem;
+            color: #FFF7D1;
+            margin: 0;
+        }
+
+        .mainbuttons {
+            background-color: #835AEC;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .mainbuttons:hover {
+            background-color: #563A9C;
+        }
+
+        /* Profile Section */
+        .photo {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .photo img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #FFF7D1;
+        }
+
+        /* Main Text Section */
+        .maintext {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .maintext h1 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+        }
+
+        /* Call-to-Action Button */
+        #underbutton {
+            display: block;
+            margin: 30px auto;
+            background-color: #835AEC;
+            color: #fff;
+            border: none;
+            width: 220px;
+            height: 50px;
+            border-radius: 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        #underbutton:hover {
+            background-color: #563A9C;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #FFF7D1;
+            font-size: 0.9rem;
+        }
+
+        .footer .heart {
+            color: red;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .mainbar {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .mainbar h1 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .mainbuttons {
+                margin: 5px;
+                padding: 7px 12px;
+                font-size: 0.8rem;
+            }
+
+            .photo img {
+                height: 180px;
+                width: 180px;
+            }
+
+            .maintext h1 {
+                font-size: 1.2rem;
+            }
+
+            #underbutton {
+                width: 200px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .mainbar h1 {
+                font-size: 1.2rem;
+            }
+
+            .mainbuttons {
+                font-size: 0.7rem;
+                padding: 5px 10px;
+            }
+
+            .photo img {
+                height: 150px;
+                width: 150px;
+            }
+
+            .maintext h1 {
+                font-size: 1rem;
+            }
+
+            #underbutton {
+                width: 180px;
+                font-size: 0.8rem;
+            }
+
+            .footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="mainbar">
+        <h1>Profile Website</h1>
+        <div>
+            <button class="mainbuttons" style="background-color: #563A9C;">Home</button>
+            <button class="mainbuttons" onclick="location.href='about.html';">About Me</button>
+            <button class="mainbuttons" onclick="location.href='projects.html';">Projects</button>
+            <button class="mainbuttons" onclick="location.href='contact.html';">Contact</button>
+        </div>
+    </div>
+
+    <!-- Profile Picture -->
+    <div class="photo">
+        <img src="A 24ITK069.jpg" alt="Profile Photo">
+    </div>
+
+    <!-- Main Text -->
+    <div class="maintext">
+        <h1>Hey!! I am Alis Patel</h1>
+        <h1>B.Tech Student in Computer Science & Engineering</h1>
+        <h1>Nirma University</h1>
+    </div>
+
+    <!-- Call-to-Action Button -->
+    <button id="underbutton" onclick="location.href='about.html';">Want to know about me?</button>
+
+    <!-- Footer -->
+     <br>
+    <p class="footer">
+        &copy;2024 Alis Patel | Designed with <span class="heart">&#9829;</span>
+    </p>
+</body>
+</html>
