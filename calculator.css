@@ -1,0 +1,50 @@
+#back{
+    height: 545px;
+    width: 500px;
+    background-color: rgb(62, 68, 75);
+    position: fixed;
+    top: 50px;
+    left: 100 px;
+    border-radius: 13px;
+    
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    padding-left: 29px;
+}
+
+#button:hover{
+    background-color:aqua ;
+    cursor: pointer;
+}
+#buttonno{
+    background-color:rgba(0, 0, 0, 0) ;
+    border-style: none;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+#button{
+    margin-top: 20px;
+    background-color: antiquewhite;
+    width: 75px;
+    height: 60px;
+    margin-left: 17px;
+    border: 3px solid blueviolet;
+    border-radius: 13px;
+}
+.overalldisplay{
+    padding-left: 30px;
+    display: flex;
+}
+#textarea{
+    height: 45px;
+    width: 450px;
+    border: 3px solid rgb(132, 53, 197);
+    border-radius: 13px;
+    margin-left: 20px;
+}
