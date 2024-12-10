@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1E201E;
+            font-family: Arial, sans-serif;
+        }
+
+        .mainbar {
+            background-color: #1B1833;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2rem;
+            flex: 1; /* Allows header to take available space */
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px; /* Add spacing between buttons */
+            flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+        }
+
+        .mainbuttons {
+            background-color: #8B5DFF;
+            color: #fff;
+            width: 100px;
+            height: 40px;
+            border: solid #FFF7D1 1px;
+            border-radius: 24px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            font-size: 0.9rem;
+        }
+
+        .mainbuttons:hover {
+            background-color: #563A9C;
+            transform: scale(1.05);
+        }
+
+        .content {
+            background-color: #835AEC;
+            margin: 20px auto;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 90%;
+            color: #fff;
+            text-align: center;
+        }
+
+        .general {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 1.2rem;
+        }
+
+        .general i {
+            color: #0A5EB0;
+            font-size: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #1E201E; /* Optional: to give footer a background */
+            color: #FFF; /* Text color */
+            font-size: 1.2rem;
+            padding: 10px 0;
+        }
+
+        .heart {
+            color: red;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .mainbar {
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start;
+                height: auto; /* Allow height to adjust */
+                padding: 10px;
+            }
+
+            .nav-buttons {
+                width: 100%; /* Full-width for buttons */
+                justify-content: center; /* Center align buttons */
+                gap: 5px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+                width: 100%; /* Full-width heading */
+                text-align: center;
+            }
+
+            .mainbuttons {
+                width: 90px;
+                height: 35px;
+                font-size: 0.8rem;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+
+            .general {
+                flex-direction: column;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            .social-icons a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .mainbuttons {
+                width: 80px;
+                height: 30px;
+                font-size: 0.7rem;
+            }
+
+            .general {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbar">
+        <h1>Contact</h1>
+        <div class="nav-buttons">
+            <button class="mainbuttons" onclick="location.href='index.html';">Home</button>
+            <button class="mainbuttons" onclick="location.href='about.html';">About Me</button>
+            <button class="mainbuttons" onclick="location.href='projects.html';">Projects</button>
+            <button class="mainbuttons">Contact</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Get in Touch With Me</h1>
+
+        <div class="general">
+            <i class="fa-solid fa-envelope"></i>
+            <p>alispatel1296@gmail.com</p>
+        </div>
+
+        <div class="general">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-9558898314</p>
+        </div>
+
+        <div class="general">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Ahmedabad, Gujarat</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/alis_patel_06/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        
+    </div>
+    <br><br>
+    <p class="footer">
+        Designed with <span class="heart">&#9829;</span> by Alis Patel
+    </p>
+</body>
+</html>
