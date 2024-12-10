@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me!!</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #1E201E;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        .mainbar {
+            background-color: #1B1833;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .mainbar h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .mainbuttons {
+            background-color: #8B5DFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: solid #FFF7D1 1px;
+            border-radius: 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+        }
+
+        .mainbuttons:hover {
+            background-color: #563A9C;
+            transform: scale(1.05);
+        }
+
+        .mainbuttons.active {
+            background-color: #563A9C;
+        }
+
+        /* Content Styles */
+        .content {
+            background-color: #835AEC;
+            width: 98%;
+            margin: 20px auto;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 20px;
+        }
+
+        .general {
+            background-color: #ffffff7e;
+            border-radius: 12px;
+            color: #080808;
+            font-size: 1rem;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .general ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .general ul li {
+            margin-bottom: 10px;
+        }
+
+        .general ul li ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        #next {
+            display: block;
+            margin: 20px auto;
+            background-color: #1E201E;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+        }
+
+        #next:hover {
+            background-color: #000;
+            transform: scale(1.05);
+        }
+        p, ul {
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .mainbar {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .mainbar h1 {
+                margin-bottom: 10px;
+                font-size: 1.5rem;
+            }
+
+            .nav-buttons {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .mainbuttons {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+
+            .general {
+                font-size: 0.9rem;
+            }
+
+            #next {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .mainbuttons {
+                font-size: 0.8rem;
+                padding: 7px 10px;
+            }
+
+            .general {
+                font-size: 0.8rem;
+            }
+
+            #next {
+                font-size: 0.8rem;
+                padding: 7px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbar">
+        <h1>About Me!!</h1>
+        <div class="nav-buttons">
+            <button class="mainbuttons" onclick="location.href='index.html';">Home</button>
+            <button class="mainbuttons active">About ME</button>
+            <button class="mainbuttons" onclick="location.href='projects.html';">Projects</button>
+            <button class="mainbuttons" onclick="location.href='contact.html';">Contact</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="general">
+            <ul>
+                <li>Hackathon Winner: Secured 1st place at the RajTech Hackathon for developing a smart parking system using IoT and machine learning.</li>
+                <li>Dean's Award: Received the prestigious Dean's Award for academic excellence in the year 2023.</li>
+                <li>Open-Source Contributor: Actively contributed to projects on GitHub, including improving documentation and fixing bugs in popular repositories.</li>
+                <li>Software Development: Familiar with software lifecycle practices like Agile and version control using Git.</li>
+                <li>Certification: Earned certifications in:
+                    <ul>
+                        <li>Google Data Analytics Professional Certificate</li>
+                        <li>AWS Cloud Practitioner Essentials</li>
+                        <li>Coursera Machine Learning by Stanford University</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="general">
+            <p>As I approach the final years of my academic journey, my goal is to secure a role in a dynamic tech company where I can contribute to innovative projects while enhancing my technical and leadership skills. I also aspire to pursue further specialization in Artificial Intelligence and Cloud Computing to remain at the forefront of technological advancements.</p>
+        </div>
+
+        <button id="next" onclick="location.href='about.html';">Back</button>
+    </div>
+</body>
+</html>
